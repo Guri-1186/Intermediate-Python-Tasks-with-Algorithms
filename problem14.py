@@ -8,3 +8,4 @@ class Student:
     
     
 student = Student("loli", 345)
+print(student)
