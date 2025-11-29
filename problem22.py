@@ -1,0 +1,19 @@
+# write a program to create nested dictionary and acess value
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+for child, info in myfamily.items():
+    print(info["year"])
+print(myfamily["child3"]["name"])
