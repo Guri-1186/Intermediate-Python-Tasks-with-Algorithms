@@ -113,3 +113,96 @@
 # print(long_word_in_collection(words, "rhino")) # => True
 # print(long_word_in_collection(words, "cat"))    #=> False
 # # long_word_in_collection(words, "monkey") => False
+
+####################################################################
+# Define a sum_of_lengths function that accepts a list of strings.
+# The function should return the sum of the string lengths.
+#
+# EXAMPLES
+# sum_of_lengths(["Hello", "Bob"])                  => 8
+# sum_of_lengths(["Nonsense"])                      => 8
+# sum_of_lengths(["Nonsense", "or", "confidence"])  => 20
+
+# def sum_of_lengths(lst):
+#     total = 0
+#     for char in lst:
+#        total+=len(char)
+#     return total
+    
+    
+    
+# print(sum_of_lengths(["Hello", "Bob"]))               # => 8
+# sum_of_lengths(["Nonsense"])                      => 8
+# sum_of_lengths(["Nonsense", "or", "confidence"])
+
+# Define a product function that accepts a list of numbers.
+# The function should return the product of the numbers.
+# The list will always have at least one value
+#
+# EXAMPLES
+
+# def product(lst):
+#     output = 1
+#     for i in lst:
+#         output *= i
+#     return output
+
+# print(product([1, 2, 3]))   # 6
+# print(product([4, 5, 6, 7]))  # 840
+# print(product([10]))  # 10
+
+#####################################################################
+# Define a smallest_number function  that accepts a list of numbers.
+# It should return the smallest value in the list.
+
+# def smallest_number(lst):
+#     smallest = lst[0]
+#     for num in lst:
+#         if num < smallest:
+#             smallest = num
+#     return smallest
+
+
+
+# print(smallest_number([1, 2, 3]))    # => 1
+# smallest_number([3, 2, 1])     => 1
+# smallest_number([4, 5, 4])     => 4
+# smallest_number([-3, -2, -1])  => -3
+
+
+# Define a concatenate function that accepts a list of strings. 
+#
+# The function should return a concatenated string which consists of
+# all list elements whose length is greater than 2 characters.
+#
+# def concatenate(lst):
+#      word = ""
+#      for char in lst:
+#          word+=char
+#      return word
+
+# print(concatenate(["abc", "def", "ghi"]))      #=> "abcdefghi"
+# concatenate(["abc", "de", "fgh", "ic"]) => "abcfgh"
+# concatenate(["ab", "cd", "ef", "gh"])   => ""
+####################################################################################
+# Define a super_sum function that accepts a list of strings. 
+# The function should sum the index positions of the first occurence of the letter “s” in each word. 
+#
+# Not every word is guaranteed to have an “s”.
+# Don’t use "sum" as a variable name as it’s a built-in keyword.
+#
+
+# def super_sum(lst):
+#     total = 0
+#     for word in lst:
+#         index = word.lower().find("s")
+#         total+=index
+#     return total
+        
+            
+# print(super_sum([]))                              # => 0
+# print(super_sum(["mustache"]))                    # => 2
+# super_sum(["mustache", "greatest"])           => 8
+# super_sum(["mustache", "pessimist"])          => 4
+# super_sum(["mustache", "greatest", "almost"]) => 12
+
