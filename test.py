@@ -1,5 +1,4 @@
 
-strings = ["enchanted", "sparks fly", "long live"]
-for index, value in enumerate(strings):
-    print(index[value])
-    
+
+for i in range (1,10):
+    print(sum(i))
