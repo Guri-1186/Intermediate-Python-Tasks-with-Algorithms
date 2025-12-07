@@ -6,9 +6,7 @@ def even_nums(numbers):
         numbers.add(user_input)
     even_set = {num for num in numbers if num % 2 == 0}
     return even_set
-   
-
-     
+      
      
 print(even_nums(numbers))
     
