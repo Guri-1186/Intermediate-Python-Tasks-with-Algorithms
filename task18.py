@@ -1,3 +1,5 @@
+#map,filter,lambda
+
 # Declare a estroy_elements function that accepts two lists.
 # It should return a list of all elements from the first list that are NOT contained in the second list.
 # Use list comprehension in your solution.
