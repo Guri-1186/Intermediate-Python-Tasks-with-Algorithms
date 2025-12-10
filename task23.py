@@ -2,6 +2,10 @@
 # It should return the difference between the sum of values in the first list and the second list
 #
 # EXAMPLES
-# sum_difference([1, 2, 3], [1, 2, 4]) => 6 - 7 => -1
-# sum_difference([4, 5], [2, 3, 6])    => 9 - 11 => -2
-# sum_difference([1], [])              => 1
+
+def sum_difference(lst1,lst2):
+    return (sum(lst1)) - (sum(lst2))
+    
+print(sum_difference([1, 2, 3], [1, 2, 4])) # => 6 - 7 => -1
+print(sum_difference([4, 5], [2, 3, 6])   ) # => 9 - 11 => -2
+print(sum_difference([1], [])             ) # => 1
