@@ -5,8 +5,19 @@
 # **kwargs is greater than 100. It should return False otherwise.
 #
 # EXAMPLES:
-# plenty_of_arguments(20, 30)                          => False
-# plenty_of_arguments(a = 50, b = 75)                  => True
-# plenty_of_arguments(a = 50, b = 25, c = 50)          => True
-# plenty_of_arguments(a = 25, b = 25, c = 25, d = 25)  => False
-# plenty_of_arguments(a = 25, b = 25, c = 25, d = 26)  => True
+def plenty_of_arguments(a,b,**kwargs):
+    result = 0
+    for value in kwargs.values():
+        result += value
+    output = result + a + b
+    if output > 100:
+        return True
+    else:
+        return False
+
+    
+print(plenty_of_arguments(20, 30)                        ) #  => False
+print(plenty_of_arguments(a = 50, b = 75)                ) #  => True
+print(plenty_of_arguments(a = 50, b = 25, c = 50)        ) #  => True
+print(plenty_of_arguments(a = 25, b = 25, c = 25, d = 25)) #  => False
+print(plenty_of_arguments(a = 25, b = 25, c = 25, d = 26)) #  => True
