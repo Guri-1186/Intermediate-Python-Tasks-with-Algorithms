@@ -4,12 +4,21 @@
 #
 # HINT: Use the in operation to check for inclusion in a view or list object
 #
-# EXAMPLE:
-# my_dict = {
-#   "A": "K",
-#   "B": "D",
-#   "C": "A",
-#   "D": "Z"
-# }
-#
-# common_elements(my_dict) => ["A", "D"]
+
+my_dict = {
+  "A": "K",
+  "B": "D",
+  "C": "A",
+  "D": "Z"
+}
+
+def common_elements(my_dict):  # => ["A", "D"]
+    result = []
+
+    for key in my_dict:
+        if key in my_dict.values():
+            result.append(key)
+
+    return result
+
+print(common_elements(my_dict))
