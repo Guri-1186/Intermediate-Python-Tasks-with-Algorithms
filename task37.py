@@ -8,10 +8,13 @@
 # HINT: 1 meter is equal to 3.28084 feet
 # HINT: The round function rounds a number to the nearest integer
 #
-# coasters = {
-#   "Kingda Ka": 139,
-#   "Top Thrill Dragster": 130,
-#   "Superman: Escape From Krypton": 126
-# }
-#
-# coaster_conversion(coasters) => {'Kingda Ka': 456, 'Top Thrill Dragster': 426, 'Superman: Escape From Krypton': 413}
+coasters = {
+  "Kingda Ka": 139,
+  "Top Thrill Dragster": 130,
+  "Superman: Escape From Krypton": 126
+}
+
+def coaster_conversion(coasters): #=> {'Kingda Ka': 456, 'Top Thrill Dragster': 426, 'Superman: Escape From Krypton': 413}
+    return {key: round(value *3.28084) for key, value in coasters.items()}
+
+print(coaster_conversion(coasters))
